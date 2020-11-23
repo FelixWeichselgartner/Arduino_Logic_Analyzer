@@ -11,4 +11,5 @@ A very simple logic analyzer, which can be used with any Arduino and Python3.
 * run: python3 plot.py
 
 Hints:
+* You can choose your pins in the Arduino sketch
 * You can choose your sampling rate in the Arduino sketch
