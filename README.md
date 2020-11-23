@@ -1,6 +1,8 @@
 Arduino_Logic_Analyzer
 ======================
 
+A very simple logic analyzer, which can be used with any Arduino and Python3.
+
 * Upload the arduino.ino sketch to your Arduino
 * Open the serial monitor
 * Start the Transmitter of your data
