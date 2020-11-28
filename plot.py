@@ -26,6 +26,7 @@ for i in range(N):
     ys = np.repeat(y, 2)
     xs = xs[1:]
     ys = ys[:-1]
+    plt.title(channel_names[i], loc='left')
     plt.plot(xs, ys)
     plt.axis([0, 10, show_min, show_max])
 
