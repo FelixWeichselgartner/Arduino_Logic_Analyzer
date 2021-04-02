@@ -1,15 +1,25 @@
-Arduino_Logic_Analyzer
+Arduino Logic Analyzer
 ======================
 
-A very simple logic analyzer, which can be used with any Arduino and Python3.
+A simple logic analyzer, which can be used with any Arduino and Python3.
 
 * Upload the firmware.ino sketch to your Arduino
-* Open the serial monitor
-* Start the transmission of your data
-* Copy the data from the serial monitor to the data.csv file
-* Adjust the title in the data.csv file
-* run: python3 plot.py
+* Find out to which COM-Port your device is connected
+* Adjust the COM-Port in `interface.py`
+* Run `interface.py` to record data from arduino and plot the result
+* You can also open serial interface (e.g. over arduino ide) can copy the received data in a csv-file
+* You can then plot with `plot.py`
 
 Hints:
 * You can choose your pins in the Arduino sketch
 * You can choose your sampling rate in the Arduino sketch
+
+## Example
+
+This is how an example application could look like:
+
+![example](img/example.png)
+
+The resulting plot could look like this:
+
+![plot](img/plot.png)

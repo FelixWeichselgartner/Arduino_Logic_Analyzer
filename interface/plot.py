@@ -7,7 +7,7 @@ from file_handling import import_recorded
 
 def plot_data(plot_d):
     channel_names, data_channels = plot_d
-    N = len(channel_names) # number of pins
+    N = len(channel_names)  # number of pins
     n = len(data_channels[0])
     
     show_min, show_max = -0.2, 1.2
@@ -16,8 +16,7 @@ def plot_data(plot_d):
     for i in range(N):
         all_axis.append(plt.subplot(N, 1, 1 + i))
         y = data_channels[i]
-        x = range(0, len(y))
-        xs = np.repeat(range(len(x)), 2)
+        xs = np.repeat(range(len(y)), 2)
         ys = np.repeat(y, 2)
         xs = xs[1:]
         ys = ys[:-1]
